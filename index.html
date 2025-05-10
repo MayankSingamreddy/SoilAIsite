@@ -74,6 +74,40 @@
     font-size: 1.2rem; 
   }
 
+  /* Updated styles for top-right navigation links */
+  .top-nav-links {
+    position: absolute;
+    top: 1.75rem;
+    right: 2rem;
+    z-index: 10;
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    align-items: flex-end; /* Align items to the right */
+  }
+
+  .social-link, .nav-link {
+    text-decoration: none;
+    color: #fff; 
+    font-size: 1.2rem; /* Adjusted for better fit */
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    margin-bottom: 0.5rem; /* Space between links */
+  }
+
+  .social-link img, .nav-link img { /* Style for icons if any */
+    width: 28px; /* Adjusted icon size */
+    height: 28px; /* Adjusted icon size */
+  }
+
+  .social-link:hover, .nav-link:hover {
+    color: #fbdd42; 
+  }
+  
+  .nav-link span {
+    font-weight: 300; /* Match button font weight */
+  }
+
   /* ----------  HERO COPY  ---------- */
   .heroContent {
     margin: 0 auto;
@@ -360,6 +394,17 @@
       <img src="logosvg/blacklogo.svg" alt="Soil AI Logo" width="56" height="56">
       <span>trysoil.ai</span>
     </a>
+
+    <!-- Updated Top Right Navigation Links -->
+    <div class="top-nav-links">
+      <a href="https://x.com/trysoilai" target="_blank" class="social-link">
+        <img src="assets/x-logo-white.svg" alt="X/Twitter Logo">
+        <span>@trysoilai</span>
+      </a>
+      <a href="team.html" class="nav-link">
+        <span>Team</span>
+      </a>
+    </div>
 
     <!-- ==== Hero copy ==== -->
     <div class="heroContent">
